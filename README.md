@@ -1,4 +1,4 @@
-This repository contains Lua definition files for statically typed World of Warcraft addon development using Luanalysis IDE.
+This repository contains **WIP** Lua definition files for statically typed World of Warcraft addon development using Luanalysis IDE.
 
 ## How to use
 - Install [Intellij IDEA](https://www.jetbrains.com/idea/download/other.html) **2022.1** _(Community Edition will do)_
