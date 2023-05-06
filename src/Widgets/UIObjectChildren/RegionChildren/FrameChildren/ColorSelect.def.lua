@@ -1,5 +1,5 @@
 ---
----@class ColorSelect
+---@class ColorSelect : Frame
 ColorSelect = {}
 
 --TODO doc

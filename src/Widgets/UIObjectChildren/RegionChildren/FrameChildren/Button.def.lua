@@ -1,6 +1,3 @@
---TODO fields
---TODO inheritance
---TODO add doc
 ---
 ---@class Button : Frame
 Button = {}
@@ -15,6 +12,8 @@ function Button:GetTextWidth() end
 ---@return number Height of the button's text (in pixels).
 function Button:GetTextHeight() end
 
+--TODO fields
+--TODO add doc
 --TODO
 --Button:Click() - Execute the click action of the button.
 --Button:Disable() - Disable the Button so that it cannot be clicked.

@@ -1,9 +1,9 @@
---TODO inherits FontInstance too
---TODO add doc
 ---
 ---@class EditBox : Frame
 EditBox = {}
 
+--TODO inherits FontInstance too
+--TODO add doc
 --TODO
 --EditBox:AddHistoryLine("text") - Add text to the edit history.
 --EditBox:ClearFocus()
