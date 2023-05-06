@@ -1,0 +1,22 @@
+---
+---@class FontInstance: UIObject
+FontInstance = {}
+
+--TODO doc
+--TODO
+--FontInstance:GetFont() - Return the font file, height, and flags.
+--FontInstance:GetFontObject() - Return the 'parent' Font object, or nil if none.
+--FontInstance:GetJustifyH() - Return the horizontal text justification.
+--FontInstance:GetJustifyV() - Return thevertical text justification.
+--FontInstance:GetShadowColor() - Returns the color of text shadow (r, g, b, a).
+--FontInstance:GetShadowOffset() - Returns the text shadow offset (x, y).
+--FontInstance:GetSpacing() - Returns the text spacing.
+--FontInstance:GetTextColor() - Returns the default text color.
+--FontInstance:SetFont("path", height[,"flags"]) - Sets the font to use for text, returns 1 if the path was valid, nil otherwise (no change occurs).
+--FontInstance:SetFontObject(fontObject) - Sets the 'parent' Font object from which this object inherits properties.
+--FontInstance:SetJustifyH("justifyH") - Sets horizontal text justification ("LEFT","RIGHT", or "CENTER")
+--FontInstance:SetJustifyV("justifyV") - Sets vertical text justification ("TOP","BOTTOM", or "MIDDLE")
+--FontInstance:SetShadowColor(r, g, b[, a]) - Sets the text shadow color.
+--FontInstance:SetShadowOffset(x, y) - Sets the text shadow offset.
+--FontInstance:SetSpacing(spacing) - Sets the spacing between lines of text in the object.
+--FontInstance:SetTextColor(r, g, b[, a]) - Sets the default text color.

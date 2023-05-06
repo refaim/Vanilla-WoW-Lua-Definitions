@@ -1,0 +1,2 @@
+--TODO inherits FontInstance too
+--TODO doc

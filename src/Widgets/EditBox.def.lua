@@ -1,0 +1,39 @@
+--TODO inherits FontInstance too
+--TODO add doc
+---
+---@class EditBox : Frame
+EditBox = {}
+
+--TODO
+--EditBox:AddHistoryLine("text") - Add text to the edit history.
+--EditBox:ClearFocus()
+--EditBox:GetAltArrowKeyMode() - Return whether only alt+arrow keys work for navigating the edit box, not arrow keys alone.
+--EditBox:GetBlinkSpeed() - Gets the blink speed of the EditBox in seconds - New in 1.11.
+--EditBox:GetHistoryLines() - Get the number of history lines for this edit box
+--EditBox:GetInputLanguage() - Get the input language (locale based not in-game)
+--EditBox:GetMaxBytes() - Gets the maximum number bytes allowed in the EditBox - New in 1.11.
+--EditBox:GetMaxLetters() - Gets the maximum number of letters allowed in the EditBox - New in 1.11.
+--EditBox:GetNumLetters() - Gets the number of letters in the box.
+--EditBox:GetNumber()
+--EditBox:GetText() - Get the current text contained in the edit box.
+--EditBox:GetTextInsets() - Gets the text display insets for the EditBox - New in 1.11.
+--EditBox:HighlightText([startPos, endPos]) - Set the highlight to all or some of the edit box text.
+--EditBox:Insert("text") - Insert text into the edit box.
+--EditBox:IsAutoFocus() - Determine if the EditBox has autofocus enabled - New in 1.11.
+--EditBox:IsMultiLine() - Determine if the EditBox accepts multiple lines - New in 1.11.
+--EditBox:IsNumeric() - Determine if the EditBox only accepts numeric input - New in 1.11.
+--EditBox:IsPassword() - Determine if the EditBox performs password masking - New in 1.11.
+--EditBox:SetAltArrowKeyMode(enable) - Make only alt+arrow keys work for navigating the edit box, not arrow keys alone.
+--EditBox:SetAutoFocus(state) - Set whether or not the editbox will attempt to get input focus when it gets shown (default: yes) - New in 1.11.
+--EditBox:SetBlinkSpeed
+--EditBox:SetFocus() - Move input focus (the cursor) to this editbox
+--EditBox:SetHistoryLines() - Set the number of history lines to remember.
+--EditBox:SetMaxBytes(maxBytes) - Set the maximum byte size for entered text.
+--EditBox:SetMaxLetters(maxLetters) - Set the maximum number of letters for entered text.
+--EditBox:SetMultiLine(state) - Set the EditBox's multi-line state - New in 1.11.
+--EditBox:SetNumber(number)
+--EditBox:SetNumeric(state) - Set if the EditBox only accepts numeric input - New in 1.11.
+--EditBox:SetPassword(state) - Set the EditBox's password masking state - New in 1.11.
+--EditBox:SetText("text") - Set the text contained in the edit box.
+--EditBox:SetTextInsets(l, r, t, b)
+--EditBox:ToggleInputLanguage()
