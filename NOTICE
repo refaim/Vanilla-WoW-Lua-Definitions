@@ -1,0 +1,16 @@
+Vanilla-WoW-Lua-Definitions
+Copyright 2023 Roman Kharitonov (rkharito@yandex.ru)
+
+This product includes human-readable documentation for World of Warcraft Lua API
+that is mostly modified content from Wowpedia (https://wowpedia.fandom.com).
+Licensed under CC BY-SA 3.0 (see LICENSE-DOCS).
+
+The file STL.def.lua includes modified code from Luanalysis project
+(https://github.com/Benjamin-Dobell/IntelliJ-Luanalysis).
+Licensed under Apache License 2.0 (see licenses/luanalysis-license.txt).
+
+The file STL.def.lua includes text from Lua 5.0 Reference Manual
+(https://www.lua.org/manual/5.0/).
+Licensed under Lua license (see licenses/lua-license.txt).
+
+All other content is licensed under Apache License 2.0 (see LICENSE-CODE).
