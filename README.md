@@ -22,6 +22,6 @@ Also see [Luanalysis README](https://github.com/Benjamin-Dobell/IntelliJ-Luanaly
 - [WoW 1.12.1 UI Source Code](https://github.com/MOUZU/Blizzard-WoW-Interface/tree/master/1.12.1) from [MOUZU/Blizzard-WoW-Interface](https://github.com/MOUZU/Blizzard-WoW-Interface)
 
 ## License
-This project is distributed under the [Apache License 2.0](LICENSE-CODE) and under the [Creative Commons Attribution ShareAlike 3.0 License](LICENSE-DOCS).
+This project is distributed under the [Apache License 2.0](LICENSE) and under the [Creative Commons Attribution ShareAlike 3.0 License](LICENSE-DOCS).
 
 See [NOTICE](NOTICE) for more information.

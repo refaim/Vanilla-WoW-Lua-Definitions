@@ -13,4 +13,4 @@ The file STL.def.lua includes text from Lua 5.0 Reference Manual
 (https://www.lua.org/manual/5.0/).
 Licensed under Lua license (see licenses/lua-license.txt).
 
-All other content is licensed under Apache License 2.0 (see LICENSE-CODE).
+All other content is licensed under Apache License 2.0 (see LICENSE).
