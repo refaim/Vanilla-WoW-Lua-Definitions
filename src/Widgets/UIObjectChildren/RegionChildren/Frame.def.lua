@@ -36,6 +36,16 @@ function Frame:SetClampedToScreen(enable) end
 ---@param enable boolean True to allow the frame to be moved by the user; false to disable.
 function Frame:SetMovable(enable) end
 
+--TODO move to more appropriate place
+--TODO add remaining types
+---@alias ScriptType "OnClick" | "OnEscapePressed" | "OnMouseDown" | "OnMouseUp"
+
+---
+--- Set or unset widget script handler.
+---@param scriptType ScriptType Script type (OnShow, OnClick, OnEvent etc).
+---@param script function|nil Function to call. Pass nil to remove any existing script.
+function Frame:SetScript(scriptType, script) end
+
 --TODO
 --Frame:CreateFontString(["name"[,"layer"[,"inheritsFrom"]]]) - Create and return a new FontString as a child of this Frame - Can instantiate virtuals in 1.11.
 --Frame:CreateTexture(["name"[,"layer"]][,"inheritsFrom"]) - Create and return a new Texture as a child of this Frame - Can instantiate virtuals in 1.11.
@@ -91,7 +101,6 @@ function Frame:SetMovable(enable) end
 --Frame:SetMovable(isMovable) - Set whether the frame can be moved.
 --Frame:SetResizable(isResizable) - Set whether the frame can be resized.
 --Frame:SetScale(scale) - Set the scale factor of this frame relative to its parent.
---Frame:SetScript("handler", function) - Set the function to use for a handler on this frame.
 --Frame:SetToplevel(isTopLevel) - Set whether the frame should raise itself when clicked - New in 1.10.2.
 --Frame:SetUserPlaced(isUserPlaced) - Set whether the frame has been relocated by the user (and will thus be saved in the layout cache).
 --Frame:StartMoving() - Start moving this frame.
