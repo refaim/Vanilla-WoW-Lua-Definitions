@@ -1,0 +1,2 @@
+---@class PetFrameHappiness: Frame
+PetFrameHappiness = {}

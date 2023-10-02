@@ -2,6 +2,21 @@
 ---@class Texture : LayeredRegion
 Texture = {}
 
+---
+--- Sets the texture to be displayed from a file or to a solid color
+---@overload fun(r: number, g: number, b:number, alpha?: number)
+---@param texturePath string path to a file with texture
+function Texture:SetTexture(texturePath) end
+
+---
+--- Set the corner coordinates for texture display
+---@overload fun(ULx: number, ULy: number, LLx: number, LLy: number, URx: number, URy: number, LRx: number, LRy: number)
+---@param minX number
+---@param maxX number
+---@param minY number
+---@param maxY number
+function Texture:SetTexCoord(minX, maxX, minY, maxY) end
+
 --TODO doc
 --TODO
 --Texture:GetBlendMode() - Return the blend mode set by SetBlendMode()
@@ -14,6 +29,4 @@ Texture = {}
 --Texture:SetDesaturated(flag) - Set whether this texture should be displayed with no saturation (Note: This has a return value)
 --Texture:SetGradient("orientation", minR, minG, minB, maxR, maxG, maxB)
 --Texture:SetGradientAlpha("orientation", minR, minG, minB, minA, maxR, maxG, maxB, maxA)
---Texture:SetTexCoord(minX, maxX, minY, maxY or ULx, ULy, LLx, LLy, URx, URy, LRx, LRy) - Set the corner coordinates for texture display.
 --Texture:SetTexCoordModifiesRect(enableFlag) - Set whether future SetTexCoord operations should modify the display rectangle rather than stretch the texture. - New in 1.11
---Texture:SetTexture("texturePath" or r, g, b[, a]) - Sets the texture to be displayed from a file or to a solid color.

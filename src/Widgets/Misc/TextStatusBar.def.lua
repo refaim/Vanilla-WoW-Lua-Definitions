@@ -1,0 +1,2 @@
+---@class TextStatusBar: StatusBar
+TextStatusBar = {}

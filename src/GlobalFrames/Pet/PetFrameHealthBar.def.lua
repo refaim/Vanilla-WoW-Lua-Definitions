@@ -1,0 +1,2 @@
+---@class PetFrameHealthBar: TextStatusBar
+PetFrameHealthBar = {}

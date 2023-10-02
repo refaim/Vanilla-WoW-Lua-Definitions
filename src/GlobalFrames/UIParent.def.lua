@@ -1,0 +1,2 @@
+---@class UIParent: Frame
+UIParent = {}

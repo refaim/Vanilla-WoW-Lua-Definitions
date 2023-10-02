@@ -10,6 +10,11 @@ Region = {}
 function Region:ClearAllPoints() end
 
 ---
+--- Set all anchors to match edges of specified frame.
+---@param frame Region|string
+function Region:SetAllPoints(frame) end
+
+---
 --- Returns the height of the region.
 ---@return number Height of the region (in pixels).
 function Region:GetHeight() end
@@ -43,6 +48,11 @@ function Region:SetWidth(width) end
 --- Set this object to shown (it will appear if its parent is visible).
 function Region:Show() end
 
+---
+--- Set this object to hidden (it and all of its children will disappear).
+function Region:Hide() end
+
+
 --TODO
 --Region:GetBottom() - Get the y location of the bottom edge of this frame - Moved in 1.10. !!! may return nil (probably relevant to all such functions)
 --Region:GetCenter() - Get the coordinates of the center of this frame - Moved in 1.10.
@@ -52,17 +62,16 @@ function Region:Show() end
 --Region:GetPoint(pointNum) - Get details for an anchor point for this frame (point, relativeTo, relativePoint, xofs, yofs) - New in 1.10.
 --Region:GetRight() - Get the x location of the right edge of this frame - Moved in 1.10.
 --Region:GetTop() - Get the y location of the top edge of this frame - Moved in 1.10.
---Region:Hide() - Set this object to hidden (it and all of its children will disappear).
---Region:SetAllPoints(frame or "frameName") - Set all anchors to match edges of specified frame - Moved in 1.10.
 --Region:SetParent(parent or "parentName") - Set the parent for this frame - Moevd in 1.10.
 
+--TODO probably should rename to FramePoint (see UI.xsd)
 ---
 ---@alias WidgetAnchorPoint "TOP" | "BOTTOM" | "LEFT" | "RIGHT" | "TOPLEFT" | "TOPRIGHT" | "BOTTOMLEFT" | "BOTTOMRIGHT" | "CENTER"
 
 --TODO x and y should both be specified or not specified, need to fix annotation
---TODO add (?) @overload fun(anchorPoint:WidgetAnchorPoint, x:number, y:number):void
 ---
 --- Sets an anchor point for the region.
+---@overload fun(anchorPoint: WidgetAnchorPoint, x: number, y: number)
 ---@param anchorPoint WidgetAnchorPoint Point on this region at which it is to be anchored to another.
 ---@param relativeTo? Region|nil Reference to the other region to which this region is to be anchored; if nil or omitted, anchors the region relative to its parent (or to the screen dimensions if the region has no parent).
 ---@param relativeAnchorPoint? WidgetAnchorPoint|nil Point on the other region to which this region is to be anchored; if nil or omitted, defaults to the same value as point.

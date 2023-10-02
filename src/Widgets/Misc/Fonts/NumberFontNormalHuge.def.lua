@@ -1,0 +1,2 @@
+---@class NumberFontNormalHuge: Font
+NumberFontNormalHuge = {}

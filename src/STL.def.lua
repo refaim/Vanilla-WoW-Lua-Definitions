@@ -344,7 +344,7 @@ function strlower(s) end
 ---
 --- Note that it is very easy to exhaust the memory of your machine with a
 --- single call to this function.
----@overload fun(s:string, n:number):string
+---@overload fun(s: string, n: number):string
 ---@param s string
 ---@param n number
 ---@param sep string
@@ -363,7 +363,7 @@ function strrep(s, n, sep) end
 --- corrected to 1. If `j` is greater than the string length, it is corrected to
 --- that length. If, after these corrections, `i` is greater than `j`, the
 --- function returns the empty string.
----@overload fun(s:string, i:number):string
+---@overload fun(s: string, i: number):string
 ---@param s string
 ---@param i number
 ---@param j number
@@ -389,7 +389,7 @@ function tan(x) end
 --- elements to `list[pos]`, `list[pos+1]`, `···`, `list[getn(list)]`. The default
 --- value for `pos` is `getn(list)+1`, so that a call `tinsert(t,x)`` inserts
 --- `x` at the end of list `t`.
----@overload fun<T>(list:T[], value:T):void
+---@overload fun<T>(list: T[], value: T):void
 ---@generic T
 ---@param list T[]
 ---@param pos number
@@ -406,7 +406,7 @@ function tinsert(list, pos, value) end
 ---
 --- The default value for `pos` is `getn(list)`, so that a call `tremove(l)`
 --- removes the last element of list `l`.
----@overload fun<V>(list:V[]):V
+---@overload fun<V>(list: V[]):V
 ---@generic V
 ---@param list V[]
 ---@param pos number

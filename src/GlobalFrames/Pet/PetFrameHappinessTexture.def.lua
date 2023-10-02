@@ -1,0 +1,2 @@
+---@class PetFrameHappinessTexture: Texture
+PetFrameHappinessTexture = {}

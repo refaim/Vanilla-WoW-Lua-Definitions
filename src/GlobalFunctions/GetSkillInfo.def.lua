@@ -1,0 +1,19 @@
+---
+--- Returns skill (or skill header) information.
+--- Returns fields in following order:
+--- [1] Skill (or header) name
+--- [2] Is skill header?
+--- [3] Is skill expanded?
+--- [4] Current skill rank
+--- [5] Skill temporary points
+--- [6] Skill modifier
+--- [7] Max skill rank
+--- [8] Is skill can be unlearned?
+--- [9] Is skill can be learned?
+--- [10] Is skill can be trained?
+--- [11] Minimum required level to learn skill
+--- [12] Unknown
+--- [13] Skill description
+---@param skillIndex number The row of the skill display to request information from
+---@return string, wowboolean, wowboolean, number, number, number, number, wowboolean, wowboolean, wowboolean, number, number, string
+function GetSkillLineInfo(skillIndex) end

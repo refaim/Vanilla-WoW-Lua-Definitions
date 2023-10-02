@@ -1,0 +1,2 @@
+---@class MasterFont: Font
+MasterFont = {}

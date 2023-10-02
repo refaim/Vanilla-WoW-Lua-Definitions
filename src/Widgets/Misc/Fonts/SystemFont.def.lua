@@ -1,0 +1,2 @@
+---@class SystemFont: MasterFont
+SystemFont = {}

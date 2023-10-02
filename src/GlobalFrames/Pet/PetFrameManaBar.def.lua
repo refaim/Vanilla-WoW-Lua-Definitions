@@ -1,0 +1,2 @@
+---@class PetFrameManaBar: TextStatusBar
+PetFrameManaBar = {}

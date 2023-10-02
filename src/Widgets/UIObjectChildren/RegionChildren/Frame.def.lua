@@ -38,17 +38,32 @@ function Frame:SetMovable(enable) end
 
 --TODO move to more appropriate place
 --TODO add remaining types
----@alias ScriptType "OnClick" | "OnEscapePressed" | "OnMouseDown" | "OnMouseUp"
+---@alias ScriptType "OnClick" | "OnEscapePressed" | "OnMouseDown" | "OnMouseUp" | "OnEvent" | "OnUpdate"
 
+--TODO override for each widget class and specify only relevant ScriptTypes
 ---
 --- Set or unset widget script handler.
 ---@param scriptType ScriptType Script type (OnShow, OnClick, OnEvent etc).
 ---@param script function|nil Function to call. Pass nil to remove any existing script.
 function Frame:SetScript(scriptType, script) end
 
+---
+--- Check if the frame can be given a handler of the specified type
+---@param scriptType ScriptType
+---@return wowboolean
+function Frame:HasScript(scriptType) end
+
+--TODO layer? inheritsFrom?
+---
+--- Create and return a new Texture as a child of this Frame.
+---@param name? string|nil
+---@param layer? string|nil
+---@param inheritsFrom? string|nil
+---@return Texture
+function Frame:CreateTexture(name, layer, inheritsFrom) end
+
 --TODO
 --Frame:CreateFontString(["name"[,"layer"[,"inheritsFrom"]]]) - Create and return a new FontString as a child of this Frame - Can instantiate virtuals in 1.11.
---Frame:CreateTexture(["name"[,"layer"]][,"inheritsFrom"]) - Create and return a new Texture as a child of this Frame - Can instantiate virtuals in 1.11.
 --Frame:CreateTitleRegion() - Create a title region for the frame if it does not have one. - New in 1.11
 --Frame:DisableDrawLayer("layer") - Disable rendering of "regions" (fontstrings, textures) in the specified draw layer.
 --Frame:EnableDrawLayer("layer") - Enable rendering of "regions" (fontstrings, textures) in the specified draw layer.

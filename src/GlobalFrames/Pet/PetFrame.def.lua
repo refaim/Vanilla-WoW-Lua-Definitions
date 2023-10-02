@@ -1,0 +1,2 @@
+---@class PetFrame: Button
+PetFrame = {}
