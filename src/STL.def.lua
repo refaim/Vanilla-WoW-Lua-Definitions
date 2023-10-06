@@ -413,6 +413,23 @@ function tinsert(list, pos, value) end
 ---@return V
 function tremove(list, pos) end
 
+---
+--- Get global variable by name.
+---@param name string
+function getglobal(name) end
+
+---
+--- Set global variable by name.
+---@param name string
+---@param value any
+function setglobal(name, value) end
+
+--- TODO add overload from https://wowpedia.fandom.com/wiki/API_time?oldid=145246
+---
+--- Returns current local time.
+---@return number
+function time() end
+
 --TODO
 --__pow
 --date
@@ -421,8 +438,5 @@ function tremove(list, pos) end
 --debugprofilestop
 --debugstack
 --geterrorhandler
---getglobal
 --ldexp
---setglobal
 --seterrorhandler
---time

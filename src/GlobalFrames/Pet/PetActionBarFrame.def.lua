@@ -1,0 +1,2 @@
+---@class PetActionBarFrame: Frame
+PetActionBarFrame = {}

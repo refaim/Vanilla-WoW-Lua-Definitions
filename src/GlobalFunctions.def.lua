@@ -239,7 +239,6 @@
 --GetBindLocation
 --GetBlockChance
 --GetBonusBarOffset
---GetBuildInfo
 --GetBuybackItemInfo
 --GetChannelList
 --GetChannelName
@@ -323,7 +322,6 @@
 --GetInventoryItemQuality
 --GetInventoryItemTexture
 --GetInventorySlotInfo
---GetItemInfo
 --GetItemQualityColor
 --GetJackpotAmount
 --GetJackpotAmount
@@ -352,7 +350,6 @@
 --GetMasterLootCandidate
 --GetMeetingStoneStatusText
 --GetMerchantItemInfo
---GetMerchantItemLink
 --GetMerchantItemMaxStack
 --GetMerchantNumItems
 --GetMinigameState
@@ -623,12 +620,10 @@
 --InviteToParty
 --IsActionInRange
 --IsAddOnLoadOnDemand
---IsAltKeyDown
 --IsAttackAction
 --IsAuctionSortReversed
 --IsAutoRepeatAction
 --IsConsumableAction
---IsControlKeyDown
 --IsCurrentAction
 --IsCurrentCast
 --IsCurrentQuestFailed
@@ -650,7 +645,6 @@
 --IsRaidLeader
 --IsRaidOfficer
 --IsResting
---IsShiftKeyDown
 --IsSpellPassive
 --IsTalentTrainer
 --IsTradeskillTrainer
@@ -1068,7 +1062,6 @@
 --OpenAllBags
 --SecondsToTime
 --SetDressUpBackground
---SetItemRef
 --TakeScreenshot
 --ToggleBackpack
 --ToggleBag

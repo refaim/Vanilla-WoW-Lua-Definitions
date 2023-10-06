@@ -2,12 +2,25 @@
 ---@class GameTooltip : Frame
 GameTooltip = {}
 
---TODO doc
+---
+--- Appends a line of text to the tooltip widget.
+---@param text string
+---@param r number @ red color value
+---@param g number @ green color value
+---@param b number @ blue color value
+---@param wrap wowboolean @ wrap text?
+---@overload fun(text: string): void
+---@overload fun(text: string, r: number, g: number, b: number): void
+function GameTooltip:AddLine(text, r, g, b, wrap) end
+
+---
+--- Sets tooltip item for the merchant frame.
+---@param itemIndex number The index of the item in the merchant's inventory.
+function GameTooltip:SetMerchantItem(itemIndex) end
 
 --TODO
 --GameTooltip:AddDoubleLine(textL, textR, rL, gL, bL, rR, gR, bR)
 --GameTooltip:AddFontStrings(leftstring, rightstring) - Dynamically expands the size of a tooltip - New in 1.11.
---GameTooltip:AddLine
 --GameTooltip:AppendText("text") - Append text to the end of the first line of the tooltip.
 --GameTooltip:ClearLines
 --GameTooltip:FadeOut
@@ -28,7 +41,6 @@ GameTooltip = {}
 --GameTooltip:SetLootItem
 --GameTooltip:SetLootRollItem(id) - Shows the tooltip for the specified loot roll item.
 --GameTooltip:SetMerchantCompareItem("slot"[, offset])
---GameTooltip:SetMerchantItem
 --GameTooltip:SetMinimumWidth(width) - (Formerly SetMoneyWidth)
 --GameTooltip:SetOwner
 --GameTooltip:SetPadding

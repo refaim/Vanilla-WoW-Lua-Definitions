@@ -36,10 +36,6 @@ function Frame:SetClampedToScreen(enable) end
 ---@param enable boolean True to allow the frame to be moved by the user; false to disable.
 function Frame:SetMovable(enable) end
 
---TODO move to more appropriate place
---TODO add remaining types
----@alias ScriptType "OnClick" | "OnEscapePressed" | "OnMouseDown" | "OnMouseUp" | "OnEvent" | "OnUpdate"
-
 --TODO override for each widget class and specify only relevant ScriptTypes
 ---
 --- Set or unset widget script handler.
