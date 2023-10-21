@@ -1,0 +1,2 @@
+---@class CraftFrame: Frame
+CraftFrame = {}

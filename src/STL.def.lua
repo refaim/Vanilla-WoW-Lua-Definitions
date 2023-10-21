@@ -416,6 +416,7 @@ function tremove(list, pos) end
 ---
 --- Get global variable by name.
 ---@param name string
+---@return any
 function getglobal(name) end
 
 ---

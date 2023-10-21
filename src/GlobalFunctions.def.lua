@@ -256,10 +256,7 @@
 --GetCorpseRecoveryDelay
 --GetCraftButtonToken
 --GetCraftDescription
---GetCraftDisplaySkillLine
 --GetCraftIcon
---GetCraftInfo
---GetCraftItemLink
 --GetCraftName
 --GetCraftNumReagents
 --GetCraftReagentInfo
@@ -374,7 +371,6 @@
 --GetNumBattlefieldScores
 --GetNumBattlefieldStats
 --GetNumBindings
---GetNumCrafts
 --GetNumFactions
 --GetNumFrames
 --GetNumFriends
@@ -411,7 +407,6 @@
 --GetNumStationeries
 --GetNumTalents
 --GetNumTalentTabs
---GetNumTradeSkills
 --GetNumTrainerServices
 --GetNumWhoResults
 --GetNumWorldStateUI
@@ -530,12 +525,9 @@
 --GetTradePlayerItemLink
 --GetTradeSkillCooldown
 --GetTradeSkillIcon
---GetTradeSkillInfo
 --GetTradeSkillInvSlotFilter
 --GetTradeSkillInvSlots
---GetTradeSkillItemLink
 --GetTradeSkillItemStats
---GetTradeSkillLine
 --GetTradeSkillNumMade
 --GetTradeSkillNumReagents
 --GetTradeSkillReagentInfo

@@ -58,6 +58,12 @@ function Frame:HasScript(scriptType) end
 ---@return Texture
 function Frame:CreateTexture(name, layer, inheritsFrom) end
 
+---
+--- Get the number of "children" (frames and things derived from frames) this frame has.
+---@return number
+function Frame:GetNumChildren() end
+
+
 --TODO
 --Frame:CreateFontString(["name"[,"layer"[,"inheritsFrom"]]]) - Create and return a new FontString as a child of this Frame - Can instantiate virtuals in 1.11.
 --Frame:CreateTitleRegion() - Create a title region for the frame if it does not have one. - New in 1.11
@@ -78,7 +84,6 @@ function Frame:CreateTexture(name, layer, inheritsFrom) end
 --Frame:GetID() - Get the ID of this frame.
 --Frame:GetMaxResize() - Gets the frame's maximum allowed resize bounds (w, h) - new in 1.11.
 --Frame:GetMinResize() - Gets the frame's minimum allowed resize bounds (w, h) - new in 1.11.
---Frame:GetNumChildren() - Get the number of "children" (frames and things derived from frames) this frame has.
 --Frame:GetNumRegions() - Return the number of "regions" (fontstrings, textures) belonging to this frame.
 --Frame:GetRegions() - Return the "regions" (fontstrings, textures) of the frame (multiple return values) belonging to this frame.
 --Frame:GetScale() - Get the scale factor of this object relative to its parent.
