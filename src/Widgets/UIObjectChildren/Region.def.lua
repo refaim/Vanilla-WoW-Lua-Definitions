@@ -52,6 +52,11 @@ function Region:Show() end
 --- Set this object to hidden (it and all of its children will disappear).
 function Region:Hide() end
 
+---
+--- Set the parent for this region.
+---@overload fun(parentName: string|nil): void
+---@param parent Region|nil
+function Region:SetParent(parent) end
 
 --TODO
 --Region:GetBottom() - Get the y location of the bottom edge of this frame - Moved in 1.10. !!! may return nil (probably relevant to all such functions)
@@ -62,7 +67,6 @@ function Region:Hide() end
 --Region:GetPoint(pointNum) - Get details for an anchor point for this frame (point, relativeTo, relativePoint, xofs, yofs) - New in 1.10.
 --Region:GetRight() - Get the x location of the right edge of this frame - Moved in 1.10.
 --Region:GetTop() - Get the y location of the top edge of this frame - Moved in 1.10.
---Region:SetParent(parent or "parentName") - Set the parent for this frame - Moevd in 1.10.
 
 --TODO probably should rename to FramePoint (see UI.xsd)
 ---

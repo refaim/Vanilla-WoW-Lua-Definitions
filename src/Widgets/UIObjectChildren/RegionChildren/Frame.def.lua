@@ -10,6 +10,11 @@ Frame = {}
 function Frame:EnableMouse(enable) end
 
 ---
+--- Set whether this frame will get mouse wheel notifications.
+---@param enable boolean
+function Frame:EnableMouseWheel(enable) end
+
+---
 --- Registers the frame for an event. The frame's OnEvent script handler will be run whenever the event fires.
 ---@param event string
 function Frame:RegisterEvent(event) end
@@ -63,6 +68,23 @@ function Frame:CreateTexture(name, layer, inheritsFrom) end
 ---@return number
 function Frame:GetNumChildren() end
 
+---
+--- Set the frame's backdrop color.
+---@overload fun(r: number, g: number, b: number): void
+---@param r number
+---@param g number
+---@param b number
+---@param alpha? number
+function Frame:SetBackdropColor(r, g, b, a) end
+
+---
+--- Set the frame's backdrop's border's color.
+---@overload fun(r: number, g: number, b: number): void
+---@param r number
+---@param g number
+---@param b number
+---@param alpha? number
+function Frame:SetBackdropBorderColor(r, g, b, a) end
 
 --TODO
 --Frame:CreateFontString(["name"[,"layer"[,"inheritsFrom"]]]) - Create and return a new FontString as a child of this Frame - Can instantiate virtuals in 1.11.
@@ -70,8 +92,6 @@ function Frame:GetNumChildren() end
 --Frame:DisableDrawLayer("layer") - Disable rendering of "regions" (fontstrings, textures) in the specified draw layer.
 --Frame:EnableDrawLayer("layer") - Enable rendering of "regions" (fontstrings, textures) in the specified draw layer.
 --Frame:EnableKeyboard(enableFlag) - Set whether this frame will get keyboard input.
---Frame:EnableMouse(enableFlag) - Set whether this frame will get mouse input.
---Frame:EnableMouseWheel(enableFlag) - Set whether this frame will get mouse wheel notifications.
 --Frame:GetBackdrop() - Creates and returns a backdrop table suitable for use in SetBackdrop - New in 1.11.
 --Frame:GetBackdropBorderColor() - Gets the frame's backdrop border color (r, g, b, a)- New in 1.11.
 --Frame:GetBackdropColor() - Gets the frame's backdrop color (r, g, b, a)- New in 1.11.
@@ -89,7 +109,6 @@ function Frame:GetNumChildren() end
 --Frame:GetScale() - Get the scale factor of this object relative to its parent.
 --Frame:GetScript("handler") - Get the function for one of this frame's handlers.
 --Frame:GetTitleRegion() - Return the frame's title region - New in 1.11.
---Frame:HasScript("handler") - Return true if the frame can be given a handler of the specified type (NOT whether it actually HAS one, use GetScript for that) - Since 1.8.
 --Frame:IsClampedToScreen() - Gets whether the frame is prohibited from being dragged off screen - New in 1.11.
 --Frame:IsFrameType("type") - Determine if this frame is of the specified type, or a subclass of that type.
 --Frame:IsKeyboardEnabled() - Get whether this frame will get keyboard input. - New in 1.11.
@@ -105,8 +124,6 @@ function Frame:GetNumChildren() end
 --Frame:RegisterEvent("event") - Indicate that this frame should be notified when event occurs.
 --Frame:RegisterForDrag("buttonType"[,"buttonType"...]) - Inidicate that this frame should be notified of drag events for the specified buttons.
 --Frame:SetBackdrop([backdropTable]) - Set the backdrop of the frame according to the specification provided.
---Frame:SetBackdropBorderColor(r, g, b[, a]) - Set the frame's backdrop's border's color.
---Frame:SetBackdropColor(r, g, b[, a]) - Set the frame's backdrop color.
 --Frame:SetClampedToScreen(clamped) - Set whether the frame is prohibited from being dragged off screen - New in 1.11.
 --Frame:SetFrameLevel(level) - Set the level of this frame (determines which of overlapping frames shows on top).
 --Frame:SetFrameStrata("strata") - Set the strata of this frame.

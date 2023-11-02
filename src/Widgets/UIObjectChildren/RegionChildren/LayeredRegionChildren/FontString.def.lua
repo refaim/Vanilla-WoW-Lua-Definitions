@@ -2,6 +2,11 @@
 ---@class FontString : LayeredRegion
 FontString = {}
 
+---
+--- Set the displayed text.
+---@param value string
+function FontString:SetText(value) end
+
 --TODO inherits FontInstance too
 --TODO doc
 --TODO
@@ -10,5 +15,4 @@ FontString = {}
 --FontString:GetText() - Get the displayed text.
 --FontString:SetAlphaGradient(start, length) - Create or remove an alpha gradient over the text.
 --FontString:SetNonSpaceWrap(wrapFlag) - Set whether long strings without spaces are wrapped or truncated.
---FontString:SetText("text") - Set the displayed text.
 --FontString:SetTextHeight(pixelHeight) - Set the height of the text by scaling graphics (Note: Can distort text).

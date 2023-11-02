@@ -5,4 +5,4 @@
 ---@alias MouseButton "LeftButton" | "RightButton"
 
 --TODO add remaining types
----@alias ScriptType "OnHide" | "OnClick" | "OnEvent" | "OnEscapePressed" | "OnMouseDown" | "OnMouseUp" | "OnShow" | "OnUpdate"
+---@alias ScriptType "OnHide" | "OnClick" | "OnEvent" | "OnEscapePressed" | "OnLoad" | "OnMouseDown" | "OnMouseUp" | "OnShow" | "OnUpdate"

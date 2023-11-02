@@ -325,7 +325,6 @@
 --GetLanguageByIndex
 --GetLastLotteryNumbers
 --GetLastLotteryNumbers
---GetLocale
 --GetLookingForGroup
 --GetLootMethod
 --GetLootRollItemInfo
@@ -1007,7 +1006,6 @@
 --UnitIsVisible
 --UnitMana
 --UnitManaMax
---UnitName
 --UnitOnTaxi
 --UnitPlayerControlled
 --UnitPlayerOrPetInParty

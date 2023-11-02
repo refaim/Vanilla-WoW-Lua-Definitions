@@ -22,6 +22,7 @@ function StatusBar:SetStatusBarTexture(fileOrTexture, layer) end
 
 ---
 --- Set the color of the bar.
+---@overload fun(r: number, g: number, b: number): void
 ---@param r number
 ---@param g number
 ---@param b number

@@ -4,6 +4,7 @@ LayeredRegion = {}
 
 ---
 --- Sets the vertex shading color of the region.
+---@overload fun(r: number, g: number, b: number): void
 ---@param r number
 ---@param g number
 ---@param b number
