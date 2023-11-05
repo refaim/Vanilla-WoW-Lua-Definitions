@@ -14,7 +14,11 @@ function UIObject:GetObjectType() end
 ---@return boolean
 function UIObject:IsObjectType(type) end
 
+---
+--- Return the name of the object.
+---@return string
+function UIObject:GetName() end
+
 --TODO
 --function UIObject:GetAlpha() end - Return this object's alpha (transparency) value.
---function UIObject:GetName() - Return the name of the object.
 --function UIObject:SetAlpha(alpha) - Set the object's alpha (transparency) value.

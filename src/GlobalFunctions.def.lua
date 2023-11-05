@@ -122,11 +122,9 @@
 --CloseTrade
 --CloseTradeSkill
 --CloseTrainer
---CollapseCraftSkillLine
 --CollapseFactionHeader
 --CollapseQuestHeader
 --CollapseSkillHeader
---CollapseTradeSkillSubClass
 --CollapseTrainerSkillLine
 --CompleteQuest
 --ConfirmAcceptQuest
@@ -175,11 +173,9 @@
 --EnumerateServerChannels
 --EquipCursorItem
 --EquipPendingItem
---ExpandCraftSkillLine
 --ExpandFactionHeader
 --ExpandQuestHeader
 --ExpandSkillHeader
---ExpandTradeSkillSubClass
 --ExpandTrainerSkillLine
 --FactionToggleAtWar
 --FlagTutorial
@@ -257,7 +253,6 @@
 --GetCraftButtonToken
 --GetCraftDescription
 --GetCraftIcon
---GetCraftName
 --GetCraftNumReagents
 --GetCraftReagentInfo
 --GetCraftReagentItemLink
@@ -468,7 +463,6 @@
 --GetRaidRosterInfo
 --GetRaidRosterSelection
 --GetRaidTargetIndex
---GetRealmName
 --GetRealZoneText
 --GetRefreshRates
 --GetReleaseTimeRemaining
@@ -979,7 +973,6 @@
 --UnitDebuff
 --UnitDefense
 --UnitExists
---UnitFactionGroup
 --UnitHasRelicSlot
 --UnitHealth
 --UnitHealthMax
