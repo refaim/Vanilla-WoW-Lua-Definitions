@@ -3,7 +3,7 @@
 GameTooltip = {}
 
 ---
---- Appends a line of text to the tooltip widget.
+--- Appends a line of text to the game tooltip widget.
 ---@param text string
 ---@param r number @ red color value
 ---@param g number @ green color value
@@ -11,7 +11,22 @@ GameTooltip = {}
 ---@param wrap wowboolean @ wrap text?
 ---@overload fun(text: string): void
 ---@overload fun(text: string, r: number, g: number, b: number): void
+---@overload fun(text: string, r: nil, g: nil, b: nil, wrap: wowboolean): void
 function GameTooltip:AddLine(text, r, g, b, wrap) end
+
+---
+--- Appends a two-part line of text to the game tooltip widget.
+---@param textL string @ left part
+---@param textR string @ right part
+---@param rL number @ red color value of a left part
+---@param gL number @ green color value of a left part
+---@param bL number @ blue color value of a left par
+---@param rR number @ red color value of a right part
+---@param gR number @ green color value of a right part
+---@param bR number @ blue color value of a right partt
+---@overload fun(textL: string, textR: string): void
+---@overload fun(textL: string, textR: string, rL: number, gL: number, bL: number): void
+function GameTooltip:AddDoubleLine(textL, textR, rL, gL, bL, rR, gR, bR) end
 
 ---
 --- Sets tooltip item for the merchant frame.
@@ -19,7 +34,6 @@ function GameTooltip:AddLine(text, r, g, b, wrap) end
 function GameTooltip:SetMerchantItem(itemIndex) end
 
 --TODO
---GameTooltip:AddDoubleLine(textL, textR, rL, gL, bL, rR, gR, bR)
 --GameTooltip:AddFontStrings(leftstring, rightstring) - Dynamically expands the size of a tooltip - New in 1.11.
 --GameTooltip:AppendText("text") - Append text to the end of the first line of the tooltip.
 --GameTooltip:ClearLines

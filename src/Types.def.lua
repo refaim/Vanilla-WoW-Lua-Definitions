@@ -1,6 +1,6 @@
 ---@alias wowboolean 1|nil
 
----@alias UnitId "target" | "pet" | "player"
+---@alias UnitId "target" | "pet" | "player" | "mouseover"
 
 ---@alias MouseButton "LeftButton" | "RightButton"
 

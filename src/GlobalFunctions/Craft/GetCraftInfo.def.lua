@@ -7,5 +7,5 @@
 --- [4] numAvailable @ number of items you can create with the reagents you have in your inventory
 --- [5] isExpanded @ Only applies to headers. Indicates whether they are expanded or contracted. Nil if not applicable.
 ---@param index number @ from 1 to GetNumCrafts()
----@return string|nil, string|nil, string|nil, number|nil, 1|0|boolean|nil
+---@return string|nil, string|nil, string|nil, number|nil, 1|nil
 function GetCraftInfo(index) end

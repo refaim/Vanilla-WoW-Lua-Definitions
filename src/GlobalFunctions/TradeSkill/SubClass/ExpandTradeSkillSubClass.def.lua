@@ -1,4 +1,5 @@
 ---
+--- Works only if trade skill window is opened.
 --- Expands trade skill header by skill line index in currently opened trade skill window.
 --- Expands all headers if index == 0.
 ---@param index number

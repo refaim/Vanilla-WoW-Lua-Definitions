@@ -6,5 +6,5 @@
 --- [3] numAvailable @ The number of items the player can craft with his available trade goods.
 --- [4] isExpanded @ Returns if the header of the index is expanded in the crafting window or not
 ---@param index number @ from 1 to GetNumCrafts()
----@return string|nil, string|nil, number|nil, 1|0|boolean|nil
+---@return string|nil, string|nil, number|nil, 1|nil
 function GetTradeSkillInfo(index) end

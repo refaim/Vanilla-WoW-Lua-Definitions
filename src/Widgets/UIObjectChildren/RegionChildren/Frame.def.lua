@@ -43,6 +43,13 @@ function Frame:SetMovable(enable) end
 
 --TODO override for each widget class and specify only relevant ScriptTypes
 ---
+--- Get widget script handler.
+---@param scriptType ScriptType Script type (OnShow, OnClick, OnEvent etc).
+---@return function|nil
+function Frame:GetScript(scriptType) end
+
+--TODO override for each widget class and specify only relevant ScriptTypes
+---
 --- Set or unset widget script handler.
 ---@param scriptType ScriptType Script type (OnShow, OnClick, OnEvent etc).
 ---@param script function|nil Function to call. Pass nil to remove any existing script.
@@ -107,7 +114,6 @@ function Frame:SetBackdropBorderColor(r, g, b, a) end
 --Frame:GetNumRegions() - Return the number of "regions" (fontstrings, textures) belonging to this frame.
 --Frame:GetRegions() - Return the "regions" (fontstrings, textures) of the frame (multiple return values) belonging to this frame.
 --Frame:GetScale() - Get the scale factor of this object relative to its parent.
---Frame:GetScript("handler") - Get the function for one of this frame's handlers.
 --Frame:GetTitleRegion() - Return the frame's title region - New in 1.11.
 --Frame:IsClampedToScreen() - Gets whether the frame is prohibited from being dragged off screen - New in 1.11.
 --Frame:IsFrameType("type") - Determine if this frame is of the specified type, or a subclass of that type.

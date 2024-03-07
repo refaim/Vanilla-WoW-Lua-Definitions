@@ -518,8 +518,6 @@
 --GetTradePlayerItemLink
 --GetTradeSkillCooldown
 --GetTradeSkillIcon
---GetTradeSkillInvSlotFilter
---GetTradeSkillInvSlots
 --GetTradeSkillItemStats
 --GetTradeSkillNumMade
 --GetTradeSkillNumReagents
@@ -527,8 +525,6 @@
 --GetTradeSkillReagentItemLink
 --GetTradeskillRepeatCount
 --GetTradeSkillSelectionIndex
---GetTradeSkillSubClasses
---GetTradeSkillSubClassFilter
 --GetTradeSkillTools
 --GetTradeTargetItemInfo
 --GetTradeTargetItemLink
@@ -856,8 +852,6 @@
 --SetTerrainMip
 --SetTexLodBias
 --SetTradeMoney
---SetTradeSkillInvSlotFilter
---SetTradeSkillSubClassFilter
 --SetTrainerServiceTypeFilter
 --SetTrainerSkillLineFilter
 --SetupFullscreenScale
@@ -956,9 +950,7 @@
 --UninviteFromParty
 --UninviteFromRaid
 --UnitAffectingCombat
---UnitArmor
 --UnitAttackBothHands
---UnitAttackPower
 --UnitAttackSpeed
 --UnitBuff
 --UnitCanAssist
@@ -984,11 +976,8 @@
 --UnitIsCorpse
 --UnitIsDead
 --UnitIsDeadOrGhost
---UnitIsEnemy
---UnitIsFriend
 --UnitIsGhost
 --UnitIsPartyLeader
---UnitIsPlayer
 --UnitIsPlusMob
 --UnitIsPVP
 --UnitIsPVPFreeForAll
@@ -1013,7 +1002,6 @@
 --UnitRangedAttackPower
 --UnitRangedDamage
 --UnitReaction
---UnitResistance
 --UnitSex
 --UnitStat
 --UnitXP
