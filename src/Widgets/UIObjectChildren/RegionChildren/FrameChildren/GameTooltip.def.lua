@@ -23,7 +23,7 @@ function GameTooltip:AddLine(text, r, g, b, wrap) end
 ---@param bL number @ blue color value of a left par
 ---@param rR number @ red color value of a right part
 ---@param gR number @ green color value of a right part
----@param bR number @ blue color value of a right partt
+---@param bR number @ blue color value of a right part
 ---@overload fun(textL: string, textR: string): void
 ---@overload fun(textL: string, textR: string, rL: number, gL: number, bL: number): void
 function GameTooltip:AddDoubleLine(textL, textR, rL, gL, bL, rR, gR, bR) end
