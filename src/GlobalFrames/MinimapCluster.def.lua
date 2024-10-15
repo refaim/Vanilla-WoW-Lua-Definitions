@@ -1,0 +1,2 @@
+---@class MinimapCluster: Frame
+MinimapCluster = {}

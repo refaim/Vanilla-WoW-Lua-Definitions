@@ -958,7 +958,6 @@
 --UnitCanCooperate
 --UnitCharacterPoints
 --UnitClass
---UnitClassification
 --UnitCreatureFamily
 --UnitCreatureType
 --UnitDamage
@@ -1029,7 +1028,6 @@
 --GetText
 --InspectUnit
 --message
---MouseIsOver
 --OpenAllBags
 --SecondsToTime
 --SetDressUpBackground
