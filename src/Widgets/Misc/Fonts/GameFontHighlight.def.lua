@@ -1,0 +1,2 @@
+---@class GameFontHighlight: MasterFont
+GameFontHighlight = {}

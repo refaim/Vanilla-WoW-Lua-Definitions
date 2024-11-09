@@ -93,6 +93,15 @@ function Frame:SetBackdropColor(r, g, b, a) end
 ---@param alpha? number
 function Frame:SetBackdropBorderColor(r, g, b, a) end
 
+---
+--- Indicate that this frame should no longer be notified when any events occur.
+function Frame:UnregisterAllEvents() end
+
+---
+--- Get the type of this frame.
+---@return string
+function Frame:GetFrameType() end
+
 --TODO
 --Frame:CreateFontString(["name"[,"layer"[,"inheritsFrom"]]]) - Create and return a new FontString as a child of this Frame - Can instantiate virtuals in 1.11.
 --Frame:CreateTitleRegion() - Create a title region for the frame if it does not have one. - New in 1.11
@@ -106,7 +115,6 @@ function Frame:SetBackdropBorderColor(r, g, b, a) end
 --Frame:GetEffectiveScale() - Get the scale factor of this object relative to the root window.
 --Frame:GetFrameLevel() - Get the level of this frame.
 --Frame:GetFrameStrata() - Get the strata of this frame.
---Frame:GetFrameType() - Get the type of this frame.
 --Frame:GetHitRectInsets() - Gets the frame's hit rectangle inset distances (l, r, t, b) - new in 1.11.
 --Frame:GetID() - Get the ID of this frame.
 --Frame:GetMaxResize() - Gets the frame's maximum allowed resize bounds (w, h) - new in 1.11.
@@ -145,5 +153,4 @@ function Frame:SetBackdropBorderColor(r, g, b, a) end
 --Frame:StartMoving() - Start moving this frame.
 --Frame:StartSizing("point") - Start sizing this frame using the specified anchor point.
 --Frame:StopMovingOrSizing() - Stop moving and/or sizing this frame.
---Frame:UnregisterAllEvents() - Indicate that this frame should no longer be notified when any events occur.
 --Frame:UnregisterEvent("event") - Indicate that this frame should no longer be notified when event occurs.

@@ -25,6 +25,26 @@ function Region:GetHeight() end
 function Region:GetWidth() end
 
 ---
+--- Determine the y location of the bottom edge of this region.
+---@return number
+function Region:GetBottom() end
+
+---
+--- Get the y location of the top edge of this frame.
+---@return number
+function Region:GetTop() end
+
+---
+--- Get the x location of the left edge of this frame.
+---@return number
+function Region:GetLeft() end
+
+---
+--- Get the x location of the right edge of this frame.
+---@return number
+function Region:GetRight() end
+
+---
 --- Determine if this object is shown (would be visible if its parent was visible).
 ---@return boolean
 function Region:IsShown() end
@@ -58,15 +78,15 @@ function Region:Hide() end
 ---@param parent Region|nil
 function Region:SetParent(parent) end
 
+---
+--- Get the parent of this region.
+---@return Region|nil
+function Region:GetParent() end
+
 --TODO
---Region:GetBottom() - Get the y location of the bottom edge of this frame - Moved in 1.10. !!! may return nil (probably relevant to all such functions)
 --Region:GetCenter() - Get the coordinates of the center of this frame - Moved in 1.10.
---Region:GetLeft() - Get the x location of the left edge of this frame - Moved in 1.10.
 --Region:GetNumPoints() - Get the number of anchor points for this frame - New in 1.10.
---Region:GetParent() - Get the parent of this frame (The object, not just the name) - Moved in 1.10.
 --Region:GetPoint(pointNum) - Get details for an anchor point for this frame (point, relativeTo, relativePoint, xofs, yofs) - New in 1.10.
---Region:GetRight() - Get the x location of the right edge of this frame - Moved in 1.10.
---Region:GetTop() - Get the y location of the top edge of this frame - Moved in 1.10.
 
 --TODO probably should rename to FramePoint (see UI.xsd)
 ---
