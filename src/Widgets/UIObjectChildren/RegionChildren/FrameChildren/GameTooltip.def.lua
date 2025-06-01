@@ -33,14 +33,38 @@ function GameTooltip:AddDoubleLine(textL, textR, rL, gL, bL, rR, gR, bR) end
 ---@param itemIndex number The index of the item in the merchant's inventory.
 function GameTooltip:SetMerchantItem(itemIndex) end
 
+---
+--- Get the number of lines in the tooltip
+---@return number
+function GameTooltip:NumLines() end
+
+---
+--- Checks if the tooltip is currently owned by the specified frame.
+---@param frame Frame
+---@return wowboolean
+function GameTooltip:IsOwned(frame) end
+
+---@alias TooltipAnchor "ANCHOR_TOPRIGHT" | "ANCHOR_RIGHT" | "ANCHOR_BOTTOMRIGHT" | "ANCHOR_TOPLEFT" | "ANCHOR_LEFT" | "ANCHOR_BOTTOMLEFT" | "ANCHOR_CURSOR" | "ANCHOR_PRESERVE" | "ANCHOR_NONE"
+
+---
+--- Sets the owner of the tooltip to the specified frame.
+---@param frame Frame
+---@param anchor TooltipAnchor
+---@param x ?number|nil
+---@param y ?number|nil
+function GameTooltip:SetOwner(frame, anchor, x, y) end
+
+---
+--- Shows the tooltip for the specified hyperlink (usually item link).
+---@param link string
+function GameTooltip:SetHyperlink(link) end
+
 --TODO
 --GameTooltip:AddFontStrings(leftstring, rightstring) - Dynamically expands the size of a tooltip - New in 1.11.
 --GameTooltip:AppendText("text") - Append text to the end of the first line of the tooltip.
 --GameTooltip:ClearLines
 --GameTooltip:FadeOut
 --GameTooltip:GetAnchorType() - Returns the current anchoring type.
---GameTooltip:IsOwned(frame) - Returns true if the tooltip is currently owned by the specified frame - Since 1.8.
---GameTooltip:NumLines() - Get the number of lines in the tooltip.
 --GameTooltip:SetAction(slot) - Shows the tooltip for the specified action button.
 --GameTooltip:SetAuctionCompareItem("type", index[, offset])
 --GameTooltip:SetAuctionItem("type", index) - Shows the tooltip for the specified auction item.
@@ -49,14 +73,12 @@ function GameTooltip:SetMerchantItem(itemIndex) end
 --GameTooltip:SetBuybackItem
 --GameTooltip:SetCraftItem
 --GameTooltip:SetCraftSpell
---GameTooltip:SetHyperlink(link) - Shows the tooltip for the specified hyperlink (usually item link).
 --GameTooltip:SetInboxItem(index) - Shows the tooltip for the specified mail inbox item.
 --GameTooltip:SetInventoryItem(unit, slot[, nameOnly])
 --GameTooltip:SetLootItem
 --GameTooltip:SetLootRollItem(id) - Shows the tooltip for the specified loot roll item.
 --GameTooltip:SetMerchantCompareItem("slot"[, offset])
 --GameTooltip:SetMinimumWidth(width) - (Formerly SetMoneyWidth)
---GameTooltip:SetOwner
 --GameTooltip:SetPadding
 --GameTooltip:SetPetAction(slot) - Shows the tooltip for the specified pet action.
 --GameTooltip:SetPlayerBuff(buffIndex) - Direct the tooltip to show information about a player's buff.

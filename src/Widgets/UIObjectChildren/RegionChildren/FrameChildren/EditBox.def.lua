@@ -2,6 +2,11 @@
 ---@class EditBox : Frame
 EditBox = {}
 
+---
+--- Insert text into the edit box.
+---@param text string
+function EditBox:Insert(text) end
+
 --TODO inherits FontInstance too
 --TODO add doc
 --TODO
@@ -18,7 +23,6 @@ EditBox = {}
 --EditBox:GetText() - Get the current text contained in the edit box.
 --EditBox:GetTextInsets() - Gets the text display insets for the EditBox - New in 1.11.
 --EditBox:HighlightText([startPos, endPos]) - Set the highlight to all or some of the edit box text.
---EditBox:Insert("text") - Insert text into the edit box.
 --EditBox:IsAutoFocus() - Determine if the EditBox has autofocus enabled - New in 1.11.
 --EditBox:IsMultiLine() - Determine if the EditBox accepts multiple lines - New in 1.11.
 --EditBox:IsNumeric() - Determine if the EditBox only accepts numeric input - New in 1.11.

@@ -71,6 +71,22 @@ function Button:LockHighlight() end
 --- Set the Button to not always be drawn highlighted.
 function Button:UnlockHighlight() end
 
+---
+--- Set the normal texture for the Button
+---@param texture Texture|string texture or path
+function Button:SetNormalTexture(texture) end
+
+---
+--- Set the highlight texture for the Button
+---@param texture Texture|string texture or path
+function Button:SetHighlightTexture(texture) end
+
+---
+--- Set the pushed texture for the Button
+---@param texture Texture|string texture or path
+function Button:SetPushedTexture(texture) end
+
+
 --Button:Click() - Execute the click action of the button.
 --Button:Disable() - Disable the Button so that it cannot be clicked.
 --Button:Enable() - Enable to the Button so that it may be clicked.
@@ -93,7 +109,4 @@ function Button:UnlockHighlight() end
 --Button:SetDisabledTextColor(r, g, b[, a]) - Set the disabled text color for the Button.
 --Button:SetDisabledTexture(texture or "texturePath") - Set the disabled texture for the Button - Updated in 1.10.
 --Button:SetFont("font", size[,"flags"]) - Set the font to use for display.
---Button:SetHighlightTexture(texture or "texturePath") - Set the highlight texture for the Button - Updated in 1.10.
---Button:SetNormalTexture(texture or "texturePath") - Set the normal texture for the Button - Updated in 1.10.
 --Button:SetPushedTextOffset(x, y) - Set the text offset for this button when pushed - New in 1.11.
---Button:SetPushedTexture(texture or "texturePath") - Set the pushed texture for the Button - Updated in 1.10.

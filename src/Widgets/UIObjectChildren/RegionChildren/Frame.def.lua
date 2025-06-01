@@ -102,6 +102,21 @@ function Frame:UnregisterAllEvents() end
 ---@return string
 function Frame:GetFrameType() end
 
+---
+--- Get the list of children frames of this frame.
+---@return Frame...
+function Frame:GetChildren() end
+
+---
+--- Get the strata of this frame.
+---@return FrameStrata
+function Frame:GetFrameStrata() end
+
+---
+--- - Set the strata of this frame.
+---@param strata FrameStrata
+function Frame:SetFrameStrata(strata) end
+
 --TODO
 --Frame:CreateFontString(["name"[,"layer"[,"inheritsFrom"]]]) - Create and return a new FontString as a child of this Frame - Can instantiate virtuals in 1.11.
 --Frame:CreateTitleRegion() - Create a title region for the frame if it does not have one. - New in 1.11
@@ -111,10 +126,8 @@ function Frame:GetFrameType() end
 --Frame:GetBackdrop() - Creates and returns a backdrop table suitable for use in SetBackdrop - New in 1.11.
 --Frame:GetBackdropBorderColor() - Gets the frame's backdrop border color (r, g, b, a)- New in 1.11.
 --Frame:GetBackdropColor() - Gets the frame's backdrop color (r, g, b, a)- New in 1.11.
---Frame:GetChildren() - Get the list of "children" (frames and things derived from frames) of this frame.
 --Frame:GetEffectiveScale() - Get the scale factor of this object relative to the root window.
 --Frame:GetFrameLevel() - Get the level of this frame.
---Frame:GetFrameStrata() - Get the strata of this frame.
 --Frame:GetHitRectInsets() - Gets the frame's hit rectangle inset distances (l, r, t, b) - new in 1.11.
 --Frame:GetID() - Get the ID of this frame.
 --Frame:GetMaxResize() - Gets the frame's maximum allowed resize bounds (w, h) - new in 1.11.
@@ -140,7 +153,6 @@ function Frame:GetFrameType() end
 --Frame:SetBackdrop([backdropTable]) - Set the backdrop of the frame according to the specification provided.
 --Frame:SetClampedToScreen(clamped) - Set whether the frame is prohibited from being dragged off screen - New in 1.11.
 --Frame:SetFrameLevel(level) - Set the level of this frame (determines which of overlapping frames shows on top).
---Frame:SetFrameStrata("strata") - Set the strata of this frame.
 --Frame:SetHitRectInsets(left, right, top, bottom) - Set the inset distances for the frame's hit rectangle - New in 1.11.
 --Frame:SetID(id) - Set the ID of this frame.
 --Frame:SetMaxResize(maxWidth, maxHeight) - Set the maximum dimensions this frame can be resized to.

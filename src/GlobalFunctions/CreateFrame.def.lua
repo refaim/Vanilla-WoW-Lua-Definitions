@@ -9,4 +9,5 @@
 ---@param template? string|nil Name of a template to be used in creating the frame; if creating a frame from multiple templates, a comma-separated list of names.
 ---@return Frame
 ---@overload fun(frameType: "Button", name?: string|nil, parent?: Frame|nil, template?: string|nil): Button
+---@overload fun(frameType: "CheckButton", name?: string|nil, parent?: Frame|nil, template?: string|nil): CheckButton
 function CreateFrame(frameType, name, parent, template) end

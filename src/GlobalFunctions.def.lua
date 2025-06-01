@@ -314,7 +314,6 @@
 --GetInventoryItemQuality
 --GetInventoryItemTexture
 --GetInventorySlotInfo
---GetItemQualityColor
 --GetJackpotAmount
 --GetJackpotAmount
 --GetLanguageByIndex
@@ -1022,7 +1021,6 @@
 --ActionButtonUp
 --BonusActionButtonDown
 --BonusActionButtonUp
---DressUpItem
 --DressUpItemLink
 --GetBindingText
 --GetText

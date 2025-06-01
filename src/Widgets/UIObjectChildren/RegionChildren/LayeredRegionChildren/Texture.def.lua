@@ -17,6 +17,18 @@ function Texture:SetTexture(texturePath) end
 ---@param maxY number
 function Texture:SetTexCoord(minX, maxX, minY, maxY) end
 
+--- BLEND - normal blending
+--- ADD - additive blend
+--- ALPHAKEY - 1-bit alpha
+--- DISABLE - opaque texture
+--- MOD - modulating blend
+---@alias BlendMode "BLEND" | "ADD" | "ALPHAKEY" | "DISABLE" | "MOD"
+
+---
+--- Set the alphaMode of the texture.
+---@param mode BlendMode
+function Texture:SetBlendMode(mode) end
+
 --TODO doc
 --TODO
 --Texture:GetBlendMode() - Return the blend mode set by SetBlendMode()
@@ -25,7 +37,6 @@ function Texture:SetTexCoord(minX, maxX, minY, maxY) end
 --Texture:GetTexture() - Gets this texture's current texture path.
 --Texture:GetVertexColor() - Gets the vertex color for the Texture.
 --Texture:IsDesaturated() - Gets the desaturation state of this Texture. - New in 1.11
---Texture:SetBlendMode("mode") - Set the alphaMode of the texture.
 --Texture:SetDesaturated(flag) - Set whether this texture should be displayed with no saturation (Note: This has a return value)
 --Texture:SetGradient("orientation", minR, minG, minB, maxR, maxG, maxB)
 --Texture:SetGradientAlpha("orientation", minR, minG, minB, minA, maxR, maxG, maxB, maxA)

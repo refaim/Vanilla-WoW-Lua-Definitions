@@ -1,4 +1,4 @@
----@alias LocaleCode "frFR" | "deDE" | "enUS" | "enGB" | "koKR" | "zhCN" | "zhTW" | "ruRU" | "esES"
+---@alias LocaleCode "deDE" | "enGB" | "enUS" | "esES" | "esMX" | "frFR" | "koKR" | "ptBR" | "ruRU" | "zhCN" | "zhTW"
 
 ---
 --- Return user interface language.
