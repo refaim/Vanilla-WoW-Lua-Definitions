@@ -1,0 +1,12 @@
+---
+--- Return information about a specific item in your bags, bank etc.
+--- Returns fields in following order:
+--- [1] itemTexture @ Path to item icon texture.
+--- [2] itemCount @ The count of items in the slot.
+--- [3] isLocked @ If item stack cannot be split.
+--- [4] itemQuality @ The quality of the item. The value is 0 to 6, which represents Poor to Artifact.
+--- [5] isReadable @ If item stack can be read (as a book).
+---@param containerId number @ the slot containing the bag, e.g. 0 for backpack, etc
+---@param slotIndex number @ slot number of the bag item you want the info for
+---@return string, number, wowboolean, number, wowboolean
+function GetContainerItemInfo(containerId, slotIndex) end

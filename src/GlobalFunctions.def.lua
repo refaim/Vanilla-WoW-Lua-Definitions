@@ -176,7 +176,6 @@
 --ExpandFactionHeader
 --ExpandQuestHeader
 --ExpandSkillHeader
---ExpandTrainerSkillLine
 --FactionToggleAtWar
 --FlagTutorial
 --FlipCameraYaw
@@ -245,9 +244,6 @@
 --GetCoinIcon
 --GetComboPoints
 --GetContainerItemCooldown
---GetContainerItemInfo
---GetContainerItemLink
---GetContainerNumSlots
 --GetCorpseMapPosition
 --GetCorpseRecoveryDelay
 --GetCraftButtonToken
@@ -313,8 +309,6 @@
 --GetInventoryItemLink
 --GetInventoryItemQuality
 --GetInventoryItemTexture
---GetInventorySlotInfo
---GetJackpotAmount
 --GetJackpotAmount
 --GetLanguageByIndex
 --GetLastLotteryNumbers
@@ -400,7 +394,6 @@
 --GetNumStationeries
 --GetNumTalents
 --GetNumTalentTabs
---GetNumTrainerServices
 --GetNumWhoResults
 --GetNumWorldStateUI
 --GetObjectiveText
@@ -627,7 +620,6 @@
 --IsResting
 --IsSpellPassive
 --IsTalentTrainer
---IsTradeskillTrainer
 --IsTrainerServiceLearnSpell
 --IsTrainerServiceSkillStep
 --IsTrainerServiceTradeSkill
