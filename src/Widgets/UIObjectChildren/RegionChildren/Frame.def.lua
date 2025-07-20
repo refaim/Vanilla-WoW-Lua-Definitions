@@ -61,7 +61,6 @@ function Frame:SetScript(scriptType, script) end
 ---@return wowboolean
 function Frame:HasScript(scriptType) end
 
---TODO layer? inheritsFrom?
 ---
 --- Create and return a new Texture as a child of this Frame.
 ---@param name? string|nil
@@ -81,7 +80,7 @@ function Frame:GetNumChildren() end
 ---@param r number
 ---@param g number
 ---@param b number
----@param alpha? number
+---@param a? number
 function Frame:SetBackdropColor(r, g, b, a) end
 
 ---
@@ -90,7 +89,7 @@ function Frame:SetBackdropColor(r, g, b, a) end
 ---@param r number
 ---@param g number
 ---@param b number
----@param alpha? number
+---@param a? number
 function Frame:SetBackdropBorderColor(r, g, b, a) end
 
 ---
@@ -113,12 +112,32 @@ function Frame:GetChildren() end
 function Frame:GetFrameStrata() end
 
 ---
---- - Set the strata of this frame.
+--- Set the strata of this frame.
 ---@param strata FrameStrata
 function Frame:SetFrameStrata(strata) end
 
+---
+--- Set whether the frame should raise itself when clicked.
+---@param enable boolean
+function Frame:SetToplevel(enable) end
+
+---
+--- Start moving the frame.
+function Frame:StartMoving() end
+
+---
+--- Stop moving and/or sizing this frame.
+function Frame:StopMovingOrSizing() end
+
+---
+--- Create and return a new FontString as a child of this Frame
+---@param name? string|nil
+---@param layer? string|nil
+---@param inheritsFrom? string|nil
+---@return FontString
+function Frame:CreateFontString(name, layer, inheritsFrom) end
+
 --TODO
---Frame:CreateFontString(["name"[,"layer"[,"inheritsFrom"]]]) - Create and return a new FontString as a child of this Frame - Can instantiate virtuals in 1.11.
 --Frame:CreateTitleRegion() - Create a title region for the frame if it does not have one. - New in 1.11
 --Frame:DisableDrawLayer("layer") - Disable rendering of "regions" (fontstrings, textures) in the specified draw layer.
 --Frame:EnableDrawLayer("layer") - Enable rendering of "regions" (fontstrings, textures) in the specified draw layer.
@@ -160,9 +179,6 @@ function Frame:SetFrameStrata(strata) end
 --Frame:SetMovable(isMovable) - Set whether the frame can be moved.
 --Frame:SetResizable(isResizable) - Set whether the frame can be resized.
 --Frame:SetScale(scale) - Set the scale factor of this frame relative to its parent.
---Frame:SetToplevel(isTopLevel) - Set whether the frame should raise itself when clicked - New in 1.10.2.
 --Frame:SetUserPlaced(isUserPlaced) - Set whether the frame has been relocated by the user (and will thus be saved in the layout cache).
---Frame:StartMoving() - Start moving this frame.
 --Frame:StartSizing("point") - Start sizing this frame using the specified anchor point.
---Frame:StopMovingOrSizing() - Stop moving and/or sizing this frame.
 --Frame:UnregisterEvent("event") - Indicate that this frame should no longer be notified when event occurs.

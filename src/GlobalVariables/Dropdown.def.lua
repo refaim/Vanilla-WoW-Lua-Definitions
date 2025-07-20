@@ -1,0 +1,4 @@
+---@type number
+UIDROPDOWNMENU_MAXBUTTONS = 32
+---@type number
+UIDROPDOWNMENU_MAXLEVELS = 3

@@ -14,22 +14,22 @@ function FontInstance:SetFontObject(font) end
 
 ---
 --- Returns the horizontal text justification.
----@return "LEFT" | "RIGHT" | "CENTER"
+---@return HorizontalJustify
 function FontInstance:GetJustifyH() end
 
 ---
 --- Sets the horizontal text justification.
----@param value "LEFT" | "RIGHT" | "CENTER"
+---@param value HorizontalJustify
 function FontInstance:SetJustifyH(value) end
 
 ---
 --- Returns the vertical text justification.
----@return "TOP" | "BOTTOM" | "MIDDLE"
+---@return VerticalJustify
 function FontInstance:GetJustifyV() end
 
 ---
 --- Sets the vertical text justification.
----@param value "TOP" | "BOTTOM" | "MIDDLE"
+---@param value VerticalJustify
 function FontInstance:SetJustifyV(value) end
 
 ---

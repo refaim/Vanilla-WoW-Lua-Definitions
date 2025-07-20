@@ -136,7 +136,6 @@
 --ConfirmSummon
 --ConfirmTalentWipe
 --ConsoleExec
---ContainerIDToInventoryID
 --ConvertToRaid
 --CreateFont
 --CreateMacro
@@ -948,7 +947,6 @@
 --UnitCanAttack
 --UnitCanCooperate
 --UnitCharacterPoints
---UnitClass
 --UnitCreatureFamily
 --UnitCreatureType
 --UnitDamage
@@ -1041,3 +1039,6 @@
 --UIFrameFadeIn
 --UIFrameFlash
 --UIParentLoadAddOn
+
+--ToggleDropDownMenu
+--UIDropDownMenu_SetAnchor

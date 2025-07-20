@@ -8,3 +8,6 @@
 ---@alias ScriptType "OnAnimFinished" | "OnChar" | "OnClick" | "OnColorSelect" | "OnCursorChanged" | "OnDoubleClick" | "OnDragStart" | "OnDragStop" | "OnEditFocusGained" | "OnEditFocusLost" | "OnEnter" | "OnEnterPressed" | "OnEscapePressed" | "OnEvent" | "OnHide" | "OnHorizontalScroll" | "OnHyperlinkClick" | "OnHyperlinkEnter" | "OnHyperlinkLeave" | "OnInputLanguageChanged" | "OnKeyDown" | "OnKeyUp" | "OnLeave" | "OnLoad" | "OnMessageScrollChanged" | "OnMouseDown" | "OnMouseUp" | "OnMouseWheel" | "OnReceiveDrag" | "OnScrollRangeChanged" | "OnShow" | "OnSizeChanged" | "OnSpacePressed" | "OnTabPressed" | "OnTextChanged" | "OnTextSet" | "OnTooltipAddMoney" | "OnTooltipCleared" | "OnTooltipSetDefaultAnchor" | "OnUpdate" | "OnUpdateModel" | "OnValueChanged" | "OnVerticalScroll"
 
 ---@alias FrameStrata "BACKGROUND" | "LOW" | "MEDIUM" | "HIGH" | "DIALOG" | "FULLSCREEN" | "FULLSCREEN_DIALOG" | "TOOLTIP"
+
+---@alias HorizontalJustify "LEFT" | "RIGHT" | "CENTER"
+---@alias VerticalJustify "TOP" | "BOTTOM" | "MIDDLE"

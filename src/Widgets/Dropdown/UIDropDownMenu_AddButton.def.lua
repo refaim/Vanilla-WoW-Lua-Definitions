@@ -1,0 +1,47 @@
+---@shape ColorPickerValues
+---@field r number
+---@field g number
+---@field b number
+---@field opacity number|nil
+
+---@shape UIDropDownMenuButtonConfig
+---@field value any @ the value that UIDROPDOWNMENU_MENU_VALUE is set to when the button is clicked
+---@field func fun(arg1:any, arg2:any):void @ the function that is called when you click the button
+---@field arg1 any @ first argument passed to function when you click the button
+---@field arg2 any @ second argument passed to function when you click the button
+---@field text string @ button text
+---@field textHeight number|nil @ font height for the button text
+---@field textR number|nil @ red component for the button text color
+---@field textG number|nil @ green component for the button text color
+---@field textB number|nil @ blue component for the button text color
+---@field justifyH "LEFT" | "CENTER" @ justify button text
+---@field checked wowboolean @ check the button
+---@field disabled wowboolean @ disable the button and show an invisible button that still traps the mouseover event so menu doesn't time out
+---@field isTitle wowboolean @ disable the button and set the font color to yellow
+---@field notClickable wowboolean @ disable the button and set the font color to white
+---@field notCheckable wowboolean @ shrink the size of the buttons and don't display a check box
+---@field keepShownOnClick wowboolean @ don't hide the dropdown menu after a button is clicked
+---@field tooltipTitle string|nil @ title of the tooltip shown on mouseover
+---@field tooltipText string|nil @ text of the tooltip shown on mouseover
+---@field hasArrow wowboolean @ show the expand arrow for multilevel menus
+---@field icon string|nil @ icon texture
+---@field tCoordLeft number|nil @ icon texture min X coordinate
+---@field tCoordRight number|nil @ icon texture max X coordinate
+---@field tCoordTop number|nil @ icon texture min Y coordinate
+---@field tCoordBottom number|nil @ icon texture max Y coordinate
+---@field owner Frame|nil @ dropdown frame that "owns" the current dropdown list
+---@field hasColorSwatch wowboolean @ shows color swatch for color selection when you click the button
+---@field r number|nil @ red component for the color value of the color swatch
+---@field g number|nil @ green component for the color value of the color swatch
+---@field b number|nil @ blue component for the color value of the color swatch
+---@field swatchFunc fun():void @ function called by the color picker on color change
+---@field hasOpacity wowboolean @ show the opacity slider on the color picker frame
+---@field opacity number @ percentage of the opacity on the color picker frame, 1.0 is fully shown, 0 is transparent
+---@field opacityFunc fun():void @ function called by the opacity slider when you change its value
+---@field cancelFunc fun(previous:ColorPickerValues):void @ function called by the color picker when you click the cancel button
+
+---
+--- Adds a new button to the dropdown menu. Should be called from initFunction during UIDropDownMenu_Initialize process.
+---@param config UIDropDownMenuButtonConfig
+---@param level ?number|nil @ menu level for the new button
+function UIDropDownMenu_AddButton(config, level) end
