@@ -1,3 +1,6 @@
+> **This project is discontinued and no longer maintained.**
+> I recommend using [wow-api-type-definitions](https://github.com/SabineWren/wow-api-type-definitions) instead.
+
 ## What is it
 This repository contains **WIP** Lua definition files for statically typed **Vanilla 1.12.1** World of Warcraft addon development using Luanalysis IDE.
 
