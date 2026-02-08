@@ -2,10 +2,21 @@
 ---@class ScrollingMessageFrame : Frame
 ScrollingMessageFrame = {}
 
+---
+--- Adds a message to the frame.
+--- ID is an optional color ID, see GetChatTypeIndex() function and ChatTypeInfo table.
+---@overload fun(text:string):void
+---@overload fun(text:string, r:number, g:number, b:number):void
+---@param text string
+---@param r number
+---@param g number
+---@param b number
+---@param id number
+function ScrollingMessageFrame:AddMessage(text, r, g, b, id) end
+
 --TODO inherits FontInstance too
 --TODO doc
 --TODO
---ScrollingMessageFrame:AddMessage("text"[, r, g, b[, id]]) - Add a message to the frame, with an optional color ID.
 --ScrollingMessageFrame:AtBottom() - Test whether frame is at the bottom.
 --ScrollingMessageFrame:AtTop() - Test whether frame is at the top - New in 1.11.
 --ScrollingMessageFrame:Clear() - Clear all lines from the frame.

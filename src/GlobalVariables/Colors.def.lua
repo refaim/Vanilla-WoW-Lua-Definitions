@@ -38,3 +38,6 @@ GREEN_FONT_COLOR = {r=0, g=0, b=0}
 RED_FONT_COLOR = {r=0, g=0, b=0}
 ---@type RGBColor
 PASSIVE_SPELL_FONT_COLOR = {r=0, g=0, b=0}
+
+---@type table<string, RGBColor>
+RAID_CLASS_COLORS = {}

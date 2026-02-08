@@ -13,7 +13,6 @@
 --ActionHasRange
 --AddChatWindowChannel
 --AddChatWindowMessages
---AddFriend
 --AddIgnore
 --AddOrDelIgnore
 --AddQuestWatch
@@ -30,7 +29,6 @@
 --BuybackItem
 --BuyGuildCharter
 --BuyMerchantItem
---BuyRandomPicks
 --BuyRandomPicks
 --BuySkillTier
 --BuyStableSlot
@@ -359,7 +357,6 @@
 --GetNumBindings
 --GetNumFactions
 --GetNumFrames
---GetNumFriends
 --GetNumGuildMembers
 --GetNumIgnores
 --GetNumLaguages
@@ -387,7 +384,6 @@
 --GetNumRoutes
 --GetNumSavedInstances
 --GetNumShapeshiftForms
---GetNumSpellTabs
 --GetNumStablePets
 --GetNumStableSlots
 --GetNumStationeries
@@ -483,8 +479,6 @@
 --GetShapeshiftFormInfo
 --GetSpellAutocast
 --GetSpellCooldown
---GetSpellName
---GetSpellTabInfo
 --GetSpellTexture
 --GetStablePetFoodTypes
 --GetStablePetInfo
@@ -501,7 +495,6 @@
 --GetTargetTradeMoney
 --GetTerrainMip
 --GetTexLodBias
---GetTime
 --GetTimeToWellRested
 --GetTitleText
 --GetTrackingTexture
@@ -575,7 +568,6 @@
 --HasAction
 --HasFullControl
 --HasInspectHonorData
---HasKey
 --HasNewMail
 --HasPetSpells
 --HasSoulstone
@@ -738,7 +730,6 @@
 --ReloadUI
 --RemoveChatWindowChannel
 --RemoveChatWindowMessages
---RemoveFriend
 --RemoveQuestWatch
 --RemoveSkillUp
 --RenamePetition

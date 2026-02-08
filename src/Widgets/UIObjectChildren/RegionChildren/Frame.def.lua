@@ -93,6 +93,11 @@ function Frame:SetBackdropColor(r, g, b, a) end
 function Frame:SetBackdropBorderColor(r, g, b, a) end
 
 ---
+--- Indicate that this frame should no longer be notified when event occurs.
+---@param event string
+function Frame:UnregisterEvent(event) end
+
+---
 --- Indicate that this frame should no longer be notified when any events occur.
 function Frame:UnregisterAllEvents() end
 
@@ -181,4 +186,3 @@ function Frame:CreateFontString(name, layer, inheritsFrom) end
 --Frame:SetScale(scale) - Set the scale factor of this frame relative to its parent.
 --Frame:SetUserPlaced(isUserPlaced) - Set whether the frame has been relocated by the user (and will thus be saved in the layout cache).
 --Frame:StartSizing("point") - Start sizing this frame using the specified anchor point.
---Frame:UnregisterEvent("event") - Indicate that this frame should no longer be notified when event occurs.
